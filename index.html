@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rohan Kadam — Java Full Stack Developer with 3+ years of experience in Java, Spring Boot, Microservices and Angular." />
+  <meta name="description" content="Rohan Kadam — Java Full Stack Developer with 4+ years of experience building scalable enterprise applications with Java, Spring Boot, Microservices, Angular & Flutter." />
   <meta name="author" content="Rohan Kadam" />
+  <meta name="keywords" content="Rohan Kadam, Java Full Stack Developer, Spring Boot, Microservices, Angular, React, Flutter, Pune Developer" />
   <title>Rohan Kadam — Java Full Stack Developer</title>
+
+  <!-- Open Graph (LinkedIn / WhatsApp / social previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rohan Kadam — Java Full Stack Developer" />
+  <meta property="og:description" content="4+ years building scalable enterprise apps with Java, Spring Boot, Microservices, Angular & Flutter. View my projects & get in touch." />
+  <meta property="og:image" content="profile.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rohan Kadam — Java Full Stack Developer" />
+  <meta name="twitter:description" content="4+ years building scalable enterprise apps with Java, Spring Boot, Microservices, Angular & Flutter." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
@@ -39,6 +49,11 @@
 
   <!-- Hero -->
   <section class="hero" id="hero">
+    <div class="hero__top">
+    <div class="hero__photo reveal">
+      <div class="hero__photo-glow" aria-hidden="true"></div>
+      <img src="profile.jpeg" alt="Rohan Kadam" class="hero__img" />
+    </div>
     <div class="hero__inner reveal">
       <p class="hero__eyebrow">👋 Hi, I'm</p>
       <h1 class="hero__name">Rohan Kadam</h1>
@@ -46,13 +61,17 @@
         <span class="typed" id="typed"></span><span class="cursor">|</span>
       </h2>
       <p class="hero__tagline">
-        Java Full Stack Developer with <strong>3+ years</strong> of experience building
+        Java Full Stack Developer with <strong>4+ years</strong> of experience building
         enterprise-grade applications using <strong>Java, Spring Boot, Microservices</strong>,
         <strong>Angular</strong> and <strong>Flutter</strong>. I love crafting scalable systems,
         clean UIs and production mobile apps.
       </p>
       <div class="hero__cta">
         <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="Rohan_Kadam_Resume.pdf" download class="btn btn--ghost">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:2px"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+          Download Resume
+        </a>
         <a href="#contact" class="btn btn--ghost">Get in Touch</a>
       </div>
       <div class="hero__socials">
@@ -70,11 +89,12 @@
         </a>
       </div>
     </div>
+    </div>
     <div class="hero__stats reveal">
-      <div class="stat"><span class="stat__num" data-target="3" data-suffix="+">0</span><span class="stat__label">Years Experience</span></div>
+      <div class="stat"><span class="stat__num" data-target="4" data-suffix="+">0</span><span class="stat__label">Years Experience</span></div>
       <div class="stat"><span class="stat__num" data-target="8" data-suffix="+">0</span><span class="stat__label">Microservices Built</span></div>
       <div class="stat"><span class="stat__num" data-target="10" data-suffix="k+">0</span><span class="stat__label">Users Served</span></div>
-      <div class="stat"><span class="stat__num" data-target="40" data-suffix="%">0</span><span class="stat__label">Faster APIs</span></div>
+      <div class="stat"><span class="stat__num" data-target="60" data-suffix="+">0</span><span class="stat__label">Faster APIs</span></div>
     </div>
   </section>
 
@@ -193,6 +213,40 @@
           </ul>
         </div>
       </div>
+
+      <div class="timeline__item reveal">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <div class="timeline__top">
+            <h3>Co-Founder <span class="timeline__tag">🚀 Startup</span></h3>
+            <span class="timeline__date">Feb 2022 – Jan 2026</span>
+          </div>
+          <p class="timeline__company">AutoJobzy · AI Job Application Automation · Remote</p>
+          <ul>
+            <li>Co-founded an early-stage startup building an AI-powered job application automation platform.</li>
+            <li>Drove product vision, architecture and end-to-end development of the platform.</li>
+            <li>Built automation workflows for job discovery, profile matching and application management.</li>
+            <li>Led the venture from concept to a working product as part of early-stage startup ventures.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__item reveal">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <div class="timeline__top">
+            <h3>Java Software Engineer</h3>
+            <span class="timeline__date">Mar 2022 – Mar 2023</span>
+          </div>
+          <p class="timeline__company">SDK Infotech Pvt. Ltd. · Pune, Maharashtra</p>
+          <ul>
+            <li>Developed 10+ backend modules using Java, Spring MVC and Hibernate.</li>
+            <li>Designed and implemented REST APIs for frontend integration.</li>
+            <li>Managed MySQL and Oracle databases, including query optimization.</li>
+            <li>Troubleshot production bugs and stabilized application releases.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -202,133 +256,19 @@
       <span class="section__tag">04</span>
       <h2 class="section__title">Featured Projects</h2>
     </div>
-    <div class="slider reveal" id="projectSlider">
-      <button class="slider__arrow slider__arrow--prev" id="projPrev" aria-label="Previous project">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m15 18-6-6 6-6"/></svg>
-      </button>
-      <div class="slider__viewport">
-        <div class="slider__track" id="projTrack">
-      <article class="project slide">
-        <div class="project__top">
-          <div class="project__badge">🏢 Real Estate · Mobile</div>
-          <h3>MDOC — Real Estate CRM, DMS &amp; Booking Platform</h3>
-        </div>
-        <p>
-          A production-grade <strong>Flutter</strong> mobile app — live on both the Google Play Store
-          and Apple App Store — powering enterprise-scale real estate CRM, document management and
-          booking workflows, backed by Spring Boot REST APIs.
-        </p>
-        <ul class="project__points">
-          <li>Built modules for Lead Management, Pre/Post-Sales, Token (EOI), Booking Events, Customer &amp; Document Management (DMS).</li>
-          <li>Engineered <strong>8+ app flavors</strong> from a single codebase for client-specific branding &amp; workflows.</li>
-          <li>Implemented dashboards, follow-ups, calendar scheduling, analytics &amp; secure file management.</li>
-          <li>Integrated JWT + Spring Security auth; optimized performance &amp; stability across Android and iOS.</li>
-        </ul>
-        <div class="tags tags--mini">
-          <span>Flutter</span><span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>JWT</span><span>REST APIs</span><span>MySQL</span><span>AWS</span><span>Git</span>
-        </div>
-        <div class="project__links">
-          <a href="https://play.google.com/store/apps/details?id=com.mdocbox" target="_blank" rel="noopener" class="store-btn">
-            <span>▶</span> Google Play
-          </a>
-          <a href="https://apps.apple.com/in/app/mymdoc/id1609352325" target="_blank" rel="noopener" class="store-btn">
-            <span></span> App Store
-          </a>
-        </div>
-      </article>
-
-      <article class="project slide">
-        <div class="project__top">
-          <div class="project__badge">🎬 Talent Hiring · Live</div>
-          <h3>iCastar — Talent Hiring &amp; Artist Job Portal</h3>
-        </div>
-        <p>
-          A production talent-hiring platform connecting artists with recruiters and casting agencies,
-          built with Spring Boot REST APIs and a React.js frontend — live and serving real users.
-        </p>
-        <ul class="project__points">
-          <li>Recruiter modules for job posting, applicant management &amp; talent discovery.</li>
-          <li>Artist features — profile &amp; portfolio management, job search &amp; application tracking.</li>
-          <li>Secure auth with Spring Security + JWT; scalable DB &amp; API design.</li>
-          <li>Delivered end-to-end: development, testing, deployment &amp; production support.</li>
-        </ul>
-        <div class="tags tags--mini">
-          <span>Java</span><span>Spring Boot</span><span>React.js</span><span>Spring Security</span><span>JWT</span><span>REST APIs</span><span>MySQL</span><span>AWS</span><span>Git</span>
-        </div>
-        <div class="project__links">
-          <a href="https://icastar.com/" target="_blank" rel="noopener" class="store-btn">
-            <span>🌐</span> Visit Live Site
-          </a>
-        </div>
-      </article>
-
-      <article class="project slide">
-        <div class="project__top">
-          <div class="project__badge">🤖 Automation · MERN</div>
-          <h3>AutoJozy — Job Search &amp; Application Automation</h3>
-        </div>
-        <p>
-          A job-application automation platform that streamlines job discovery and applying across
-          recruitment portals — built on a React.js + Node.js stack with intelligent profile matching.
-        </p>
-        <ul class="project__points">
-          <li>Built automation workflows for job discovery, profile updates &amp; application management.</li>
-          <li>Auto-identifies recommended jobs via user preferences &amp; profile-matching criteria.</li>
-          <li>Responsive React.js dashboards to monitor activities, status &amp; workflows.</li>
-          <li>Secure Node.js/Express REST APIs for workflow orchestration &amp; user management.</li>
-        </ul>
-        <div class="tags tags--mini">
-          <span>React.js</span><span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>MongoDB</span><span>MySQL</span><span>Automation</span><span>Git</span>
-        </div>
-      </article>
-
-      <article class="project slide">
-        <div class="project__top">
-          <div class="project__badge">🏦 Banking Domain</div>
-          <h3>Credit Processing System</h3>
-        </div>
-        <p>
-          Engineered Spring Boot microservices for borrower onboarding and credit-processing
-          workflows, with secure REST APIs and role-based access control via Spring Security.
-        </p>
-        <ul class="project__points">
-          <li>Built Angular (v8–15) modules with NgRx for complex forms & workflows.</li>
-          <li>Implemented role-based access control with Spring Security.</li>
-          <li>Migrated legacy JSP modules to Angular.</li>
-          <li>Optimized DB queries to improve API response time.</li>
-        </ul>
-        <div class="tags tags--mini">
-          <span>Java</span><span>Spring Boot</span><span>Microservices</span><span>Angular</span><span>NgRx</span><span>RxJS</span><span>MySQL</span>
-        </div>
-      </article>
-
-      <article class="project slide">
-        <div class="project__top">
-          <div class="project__badge">🌾 GovTech / Land Records</div>
-          <h3>Bhoomi22 — Land Records Management</h3>
-        </div>
-        <p>
-          Architected backend REST APIs for land-record processing and built React.js UI
-          components for data entry and visualization, deployed on AWS.
-        </p>
-        <ul class="project__points">
-          <li>Integrated AWS S3 for document upload & download.</li>
-          <li>Implemented Redis caching to reduce API response time by ~40%.</li>
-          <li>Built React.js components for data entry & visualization.</li>
-          <li>Handled production deployments & issue resolution on AWS.</li>
-        </ul>
-        <div class="tags tags--mini">
-          <span>Java 8</span><span>Spring Boot</span><span>Hibernate</span><span>React.js</span><span>MySQL</span><span>AWS</span><span>Redis</span>
-        </div>
-      </article>
-        </div>
-      </div>
-      <button class="slider__arrow slider__arrow--next" id="projNext" aria-label="Next project">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m9 18 6-6-6-6"/></svg>
-      </button>
+    <div class="pmarquee reveal">
+      <div class="pmarquee__track" id="projectsGrid"></div>
     </div>
-    <div class="slider__dots" id="projDots"></div>
   </section>
+
+  <!-- Project detail modal -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__box modal__box--project" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+      <button class="modal__close" id="closeProject" aria-label="Close">&times;</button>
+      <div id="projectModalBody"></div>
+    </div>
+  </div>
 
   <!-- Education -->
   <section class="section" id="education">
